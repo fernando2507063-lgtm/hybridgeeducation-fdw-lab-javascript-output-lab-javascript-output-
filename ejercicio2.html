@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - JavaScript Output</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarNombre()">
+        Mostrar nombre
+    </button>
+
+    <p id="mensaje"></p>
+
+    <button onclick="cambiarTexto()">
+        Cambiar texto
+    </button>
+
+    <script>
+        function mostrarNombre() {
+            alert("Fernando Loera");
+        }
+
+        function cambiarTexto() {
+            document.getElementById("mensaje").innerHTML =
+                "¡Texto actualizado con Javascript!";
+        }
+
+        console.log("Página cargada correctamente");
+    </script>
+
+</body>
+</html>
